@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atharva - BCA Student Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Floating Code Symbols Background -->
+    <div class="code-symbols">
+        <div class="symbol">#</div>
+        <div class="symbol">{}</div>
+        <div class="symbol">;</div>
+        <div class="symbol">:</div>
+        <div class="symbol">[]</div>
+        <div class="symbol">()</div>
+        <div class="symbol">==</div>
+        <div class="symbol">=></div>
+        <div class="symbol">/.</div>
+        <div class="symbol">/*</div>
+        <div class="symbol">*/</div>
+        <div class="symbol"><></div>
+        <div class="symbol">.html</div>
+        <div class="symbol">.css</div>
+        <div class="symbol">.js</div>
+        <div class="symbol">void()</div>
+        <div class="symbol">return</div>
+        <div class="symbol">const</div>
+        <div class="symbol">let</div>
+        <div class="symbol">var</div>
+        <div class="symbol">function</div>
+        <div class="symbol">class</div>
+        <div class="symbol">if()</div>
+        <div class="symbol">else</div>
+        <div class="symbol">for()</div>
+        <div class="symbol">while()</div>
+        <div class="symbol">public</div>
+        <div class="symbol">private</div>
+        <div class="symbol">static</div>
+        <div class="symbol">import</div>
+        <div class="symbol">export</div>
+        <div class="symbol">async</div>
+        <div class="symbol">await</div>
+        <div class="symbol">try</div>
+        <div class="symbol">catch</div>
+        <div class="symbol">throw</div>
+        <div class="symbol">new</div>
+        <div class="symbol">this</div>
+        <div class="symbol">super</div>
+        <div class="symbol">extends</div>
+        <div class="symbol">interface</div>
+        <div class="symbol">&&</div>
+        <div class="symbol">||</div>
+        <div class="symbol">!</div>
+        <div class="symbol">?</div>
+        <div class="symbol">:</div>
+        <div class="symbol">...</div>
+        <div class="symbol">@</div>
+        <div class="symbol">$</div>
+        <div class="symbol">%</div>
+        <div class="symbol">^</div>
+        <div class="symbol">&</div>
+        <div class="symbol">*</div>
+        <div class="symbol">+=</div>
+        <div class="symbol">-=</div>
+        <div class="symbol">*=</div>
+        <div class="symbol">/=</div>
+    </div>
+
+    <!-- Loading Animation -->
+    <div id="loader">
+        <div class="loading-container">
+            <div class="code-lines" id="codeDisplay"></div>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+            <div class="loading-text">Loading Tech Portfolio...</div>
+            <div class="tech-icons">
+                <i class="fas fa-code icon"></i>
+                <i class="fab fa-html5 icon"></i>
+                <i class="fab fa-css3-alt icon"></i>
+                <i class="fab fa-js-square icon"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Atharva</div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><button id="themeToggle" class="theme-toggle"><i class="fas fa-moon"></i></button></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Hi, I'm <span class="typing"></span></h1>
+                <p class="subtitle">BCA Student | Aspiring IT Professional | Tech Learner</p>
+                <p class="description">I'm currently pursuing BCA and building foundational skills in programming and web basics. Excited to grow and aim for MCA and a career in IT!</p>
+                <a href="#contact" class="cta-button">Get In Touch</a>
+            </div>
+            <div class="hero-image">
+                <img src="C:\Users\SARTHAK\Downloads\e24eee77-f76f-40df-9fc2-45746ae92614-1_all_17013.jpg" alt="Profile" class="profile-img">
+            </div>
+        </div>
+        <div class="particles" id="particles"></div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a dedicated BCA student passionate about learning programming and technology. I've gained basics in C, HTML, CSS, JavaScript, Java, and OS, and I'm eager to build on this foundation.</p>
+                    
+                    <div class="about-info">
+                        <div class="info-block">
+                            <h4>🎓 Education</h4>
+                            <p>Bachelor of Computer Applications (BCA)</p>
+                            <p>RAJARAMBAPPU INSTITUTE OF TECHNOLOGY  (Ongoing)</p>
+                        </div>
+                        <div class="info-block">
+                            <h4>🎯 Goals</h4>
+                            <p>Pursue MCA after BCA</p>
+                            <p>Secure a placement in the IT industry</p>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="download-cv-btn"><i class="fas fa-download"></i> Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-skill="c-programming">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>C Programming</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                    <p>70%</p>
+                    <span class="view-projects">View Projects →</span>
+                </div>
+                <div class="skill-card" data-skill="html">
+                    <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                    <h3>HTML</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                    <p>75%</p>
+                    <span class="view-projects">View Projects →</span>
+                </div>
+                <div class="skill-card" data-skill="css">
+                    <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                    <h3>CSS</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                    <p>70%</p>
+                    <span class="view-projects">View Projects →</span>
+                </div>
+                <div class="skill-card" data-skill="javascript">
+                    <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                    <h3>JavaScript (Basic)</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 60%"></div>
+                    </div>
+                    <p>60%</p>
+                    <span class="view-projects">View Projects →</span>
+                </div>
+                <div class="skill-card" data-skill="java">
+                    <div class="skill-icon"><i class="fab fa-java"></i></div>
+                    <h3>Java (Basic)</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 65%"></div>
+                    </div>
+                    <p>65%</p>
+                    <span class="view-projects">View Projects →</span>
+                </div>
+                <div class="skill-card" data-skill="os">
+                    <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+                    <h3>Operating Systems (Basic)</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 55%"></div>
+                    </div>
+                    <p>55%</p>
+                    <span class="view-projects">View Projects →</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Testimonials</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Atharva shows great potential as a learner and is eager to apply his skills in real-world scenarios."</p>
+                    <p class="testimonial-author">- Professor XYZ, BCA Faculty</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Dedicated student with a strong foundation in programming basics. Excited to see his growth!"</p>
+                    <p class="testimonial-author">- Mentor ABC, Coding Bootcamp</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Atharva is proactive in learning and has a keen interest in technology. A promising talent!"</p>
+                    <p class="testimonial-author">- Peer DEF, BCA Classmate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <h2 class="section-title">Resume / CV</h2>
+            <div class="resume-content">
+                <div class="resume-block">
+                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <div class="resume-item">
+                        <h4>Bachelor of Computer Applications (BCA)</h4>
+                        <p class="resume-meta">RAJARAMBAPPU INSTITUTE OF TECHNOLOGY | Ongoing</p>
+                        <p>Learning programming fundamentals and IT basics</p>
+                    </div> 
+                </div>
+
+                <div class="resume-block">
+                    <h3><i class="fas fa-certificate"></i> Certifications</h3>
+                    <div class="resume-item">
+                        <h4>Basic Programming in C</h4>
+                        <p class="resume-meta">Online Course | 2023</p>
+                    </div>
+                    <div class="resume-item">
+                        <h4>HTML & CSS Fundamentals</h4>
+                        <p class="resume-meta">Udemy | 2024</p>
+                    </div>
+                </div>
+
+                <div class="resume-block">
+                    <h3><i class="fas fa-briefcase"></i> Experience</h3>
+                    <div class="resume-item">
+                        <h4>Self-Learning & Academic Projects</h4>
+                        <p class="resume-meta">Personal | Ongoing</p>
+                        <p>Building foundational skills through coursework and online resources</p>
+                    </div>
+                </div>
+
+                <a href="#" class="download-cv-btn large"><i class="fas fa-download"></i> Download Full CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email</h4>
+                        <p><a href="mailto:suryawanshiatharva623@gmail.com">suryawanshiatharva623@gmail.com</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <h4>Phone</h4>
+                        <p><a href="tel:+919881956565">+91 98819 56565</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Location</h4>
+                        <p>Sangli, Maharashtra, India</p>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-media">
+        <div class="container">
+            <h3>Follow Me</h3>
+            <div class="social-links">
+                <a href="https://github.com" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Atharva</h4>
+                    <p>BCA Student & Tech Learner</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Social</h4>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Atharva. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
